@@ -1,0 +1,6 @@
+name: interviewSQL
+runtime:
+  name: python
+  options:
+    virtualenv: venv
+description: create AWS RDS for SQL server interviews
