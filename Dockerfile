@@ -4,7 +4,7 @@ ENV ACCEPT_EULA=Y
 ENV SA_PASSWORD=EPAM1nt3rv13w
 
 WORKDIR /temp
-COPY /SetupSQL/*.sql ./SetupSQL/
+COPY *.sql ./SetupSQL/
 
 RUN (/opt/mssql/bin/sqlservr --accept-eula &) | grep -q "Service Broker manager has started" \
 && /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P "EPAM1nt3rv13w" -i /temp/SetupSQL/0_CreateDBs.sql \
