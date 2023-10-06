@@ -9,7 +9,7 @@ jobs:
       with:
         accept eula: Y #Required, ACCEPT_EULA confirms your acceptance of the End-User Licensing Agreement.
         sa password: EPAM1nt3rv13w # Optional, default value is SqlSever123123.
-    - uses: action/checkout@mater
+    - uses: actions/checkout@mater
     - name: build and push
       uses: docker/build-push-action@v1
       with:
