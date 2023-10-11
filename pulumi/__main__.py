@@ -1,4 +1,3 @@
-import json
 import pulumi
 import pulumi_aws as aws
 
@@ -43,5 +42,4 @@ rds = aws.rds.Instance("default",
                        skip_final_snapshot=True,
                        vpc_security_group_ids= [allow_SQL.id],
                        )
-pulumi.export("SG",allow_SQL.name)
 pulumi.export("RDS_Endpoint",rds.endpoint)
