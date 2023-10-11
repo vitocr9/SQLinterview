@@ -27,7 +27,7 @@ allow_SQL = aws.ec2.SecurityGroup("allowSQL",
                                     })
 
 #a RDS Server with MSSQL to provide persistency and store the database
-rds = aws.rds.Instance("default",
+rds = aws.rds.Instance("interview",
                        allocated_storage=20,
                        apply_immediately=1,
                        backup_retention_period=0,
