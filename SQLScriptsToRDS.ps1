@@ -1,4 +1,4 @@
-$SQLServer= "interview4bc.cjrvboc3ad46.us-east-1.rds.amazonaws.com,3341"
+$SQLServer= "interview02c.cvv9wwjhg8lo.us-east-1.rds.amazonaws.com,3341"
 $username = "sa"
 $password = 'V3ry5tr0ngP455'
 $files = Get-ChildItem -Path ./SetupSQL
